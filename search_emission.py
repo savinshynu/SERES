@@ -566,7 +566,7 @@ if __name__ == '__main__':
         description='Reads radio observation and satellite coordinates in .npz format to produce diagnostic plots and calculate the statistics',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-d','--dat_file', type = str, required = True, help = 'Radio observation in .npz format')
-    parser.add_argument('-s','--sat_file', type = str, required = False, help = 'Satellite coordinates in .npz format')
+    parser.add_argument('-s','--sat_file', type = str, required = True, help = 'Satellite coordinates in .npz format')
     parser.add_argument('-o','--out_dir', type = str, required = True, help = 'Output directory to save the plots and write out text files')
     parser.add_argument('-m','--meta',  action = "store_true", help = 'Print basic metadata')
     parser.add_argument('-p','--plot', nargs='+', required = False ,  help=' plotting: w : waterfall, i : spectra, t : time series, a : all' )
