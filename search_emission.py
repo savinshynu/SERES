@@ -1,4 +1,8 @@
 """
+Created on Fri Nov 10 
+
+@author:  S. S. Varghese
+
 A module to process the observations of satellites and 
 conduct a bunch of diagnostics
 
