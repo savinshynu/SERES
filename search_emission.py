@@ -569,7 +569,7 @@ if __name__ == '__main__':
     parser.add_argument('-s','--sat_file', type = str, required = True, help = 'Satellite coordinates in .npz format')
     parser.add_argument('-o','--out_dir', type = str, required = True, help = 'Output directory to save the plots and write out text files')
     parser.add_argument('-m','--meta',  action = "store_true", help = 'Print basic metadata')
-    parser.add_argument('-p','--plot', nargs='+', required = False ,  help=' plotting: w : waterfall, i : spectra, t : time series, a : all' )
+    parser.add_argument('-p','--plot', nargs='+', required = False ,  help=' plotting: w : waterfall, s : spectra, t : time series, a : all' )
     parser.add_argument('-c','--cin', nargs='+', required = False ,  help=' plotting: tbeg, tend, fbeg, fend, if given give all the entries' )
     parser.add_argument('-f','--find', action = "store_true", help = 'Find single pulses')
     parser.add_argument('-dc','--down', action = "store_true", help = 'Down channelize data')
